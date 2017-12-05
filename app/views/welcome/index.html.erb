@@ -1,3 +1,12 @@
 <h1>World's sentiments today</h1>
 <br/>
 <%= line_chart(@sentiments, xtitle: "Time", label: "Sentiments", refresh: 60) %>
+<br/>
+<br/>
+<h3>Methodology</h3>
+<p>
+I use Reddit API to get all comments for the top 10 posts.
+I, then, run Naive Bayesian classifier to identify which comments are positive and negative.
+To get overall sentiments, I add all sentiments for the comments and multiply them with the number of upvotes.
+These sentiments are computed every 10 minutes.
+</p>
