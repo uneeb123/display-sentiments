@@ -10,6 +10,7 @@ end
 gem "mongoid"
 gem "chartkick"
 gem "passenger"
+gem "aws-sdk"
 
 # DEFAULTS
 
